@@ -6,7 +6,137 @@
   height: 40vmin;
   pointer-events: none;
 }
+*{
+  padding:0;
+  margin:0;
+}
 
+.container{
+  height:100vh;
+  background-color:#ccc;
+  position:relative;
+}
+
+.container .sidebar{
+  position:fixed;
+  background-color:#233694;
+  height:100vh;
+  width:250px;
+  z-index:1;
+  text-align:center;
+  box-shadow:0px 15px 30px rgba(0,0,0,0.1);
+}
+.sidebar li:nth-child(1){
+  padding:30px 0px;
+}
+.hello{
+  font-weight:bold;
+  margin-left: 150px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size:60px;
+  color:rgb(0,0,0)
+}
+.head{
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar li:hover:nth-child(1){
+  padding:30px 0px;
+  background-color:transparent;
+  color:rgb(3, 3, 3);
+}
+
+.sidebar li{
+  margin-top: 25px;
+  padding:20px;
+  cursor:pointer;
+  transition:all 0.5s;
+  letter-spacing:1px;
+  display:flex;
+  flex-direction:row;
+}
+.button{
+  bottom: 20px;
+  position: absolute;
+  padding: 10px 30px;
+  left: 40px;
+  background-color: #3e398b;
+  color: aliceblue;
+  font-size: 20px;
+}
+.sidebar li span:nth-child(1){
+  font-size:21px;
+  color: rgb(0, 0, 0);
+  }
+
+.sidebar li span:nth-child(2){
+  font-size:20px;
+  padding: 0px 14px;
+  color: rgb(255, 255, 255);
+}
+
+.sidebar li:hover{
+  background-color:#080346;
+  padding:10px;
+}
+.Pc{
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.container .content{
+  padding-left:1px;
+}
+.header{
+  width: 100%;
+  background-color: #394cac;
+  height: 200px;
+}
+.header h1{
+  font-size: 40px;
+  color: #fff;
+  margin-left: 180px;
+}
+.header h3{
+  font-size: 20px;
+  color: #fff;
+  margin-right: 230px;
+  display: flex;
+}
+.subtitle{
+  margin-left: 250px;
+}
+.button2{
+  position: absolute;
+  right: 150px;
+  top: 100px;
+  padding: 10px 30px;
+  background-color: #3e398b;
+  color: aliceblue;
+  font-size: 25px;
+}
+.buttons{
+  background-color: rgb(255, 255, 255);
+  height: 68%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-left: 250px;
+}
+.contenu{
+  padding: 10px 0px;
+  height: 250px;
+  width: 250px;
+  background-color: #3e398b;
+  color: aliceblue;
+  font-size: 40px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
